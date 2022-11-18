@@ -1,29 +1,67 @@
-#div1 {
-	background-color: red;
-	width: 150px;
-	float: left;
-	height: 100px;
-	padding: 100px;
+#wrapper {
+	width: 800px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#top-half,
+#bottom-half {
+	width: 100%;
+	height: 300px;
 	text-align: center;
 	border-radius: 50px;
+	display: flex;
 }
-#div2 {
+
+#top-half-left,
+#bottom-half-left {
+	width: 60%;
+	background-color: red;
+	border-radius: 50px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+#bottom-half-left {
 	background-color: blue;
-	height: 100px;
-	width: 150px;
-	padding: 25px;
-	color: white;
-	text-align: center;
-	overflow: hidden;
-	border-radius: 25px;
 }
-#div3 {
-	background-color: yellow;
-	height: 100px;
-	width: 150px;
-	padding: 25px;
+
+#top-half-right,
+#bottom-half-right {
+	width: 40%;
+	display: flex;
 	color: white;
-	text-align: center;
-	overflow: hidden;
-	border-radius: 25px;
+	flex-direction: column;
+	height: 100%;
+}
+
+#theContent,
+#secondContent {
+	height: 50%;
+	background-color: blue;
+	border-radius: 50px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+#secondContent {
+	background-color: yellow;
+}
+
+#theOtherStuff,
+#theExtraStuff {
+	height: 50%;
+	background-color: red;
+	border-radius: 50px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+#theExtraStuff {
+	background-color: black;
 }
